@@ -100,7 +100,6 @@ body {
   height: 500px;
 }
 
-
 .efeito {
   animation-name: efeito;
   animation-duration: 20s;
@@ -124,7 +123,7 @@ body {
 }
 
 .salsicha__mobile {
-    display: none;
+  display: none;
 }
 
 hr {
@@ -263,32 +262,35 @@ section {
   }
 
   .headline h1 {
-    font-size: 1em;    
+    text-align: left;
+    font-size: 1em;
+    white-space: nowrap;
   }
 
   .headline h2 {
-    font-size: 2em;
+    text-align: left;
+    font-size: 2em;    
   }
 
   .headline p {
-    font-size: .83em;   
-    text-align: center;
-  } 
-  
+    font-size: 1em;
+    text-align: left;
+  }
+
   .salsicha__mobile {
     display: block;
     flex: 100%;
     text-align: center;
-    margin: auto;    
-  
+    margin: auto;
+
     position: relative;
     display: block;
     z-index: 1;
-  }  
+  }
 
   .salsicha__mobile img {
     width: 200px;
-    height: 200px;     
+    height: 200px;
   }
 
   .salsicha__mobile::before {
@@ -304,25 +306,47 @@ section {
     background-color: #07a0c3;
     border-radius: 50%;
     z-index: -1; /* Coloca o círculo atrás da imagem */
-  }  
+  }
 
   .contato-btn {
     display: inline-block;
   }
 
-  hr {
-    /* width: 90%; */
-    margin: 10%;
+  hr {    
+    display: none;
   }
 
   .especialidades {
+    background-color: #fff;
     width: 100%;
-    margin: 0;
+    margin: 40px 0 30px 0;
+    padding: 20px 0 15px 0;       
   }
-  
+
+  .especialidades p {
+    white-space: nowrap;
+    margin-left: 5%;      
+  }  
+
+  .especialidades h3::before {
+    content: "";
+    display: inline-block;
+    width: 2px; /* Largura da linha */
+    height: 30px; /* Altura da linha */
+    background-color: #07a0c3; /* Cor da linha */
+    margin-right: 10px; /* Espaço entre a linha e o texto */
+    vertical-align: middle; /* Alinhamento vertical */
+  }
+
   .salsicha__desktop,
   .rotacao,
   .rotacao img {
     display: none;
   }
 }
+
+/* @media screen and (max-width: 810px) {
+  .especialidades {    
+    margin: 5%;
+  }
+} 
