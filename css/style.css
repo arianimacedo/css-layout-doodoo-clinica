@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff1d0;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  flex: 20%;
+  text-align: center;
+}
+
+.menu {
+  flex: 70%;
+  text-align: right;
+  padding: 14px;
+  margin-right: 10%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #252525;
+  font-size: 1em;
+  padding: 20px 16px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  margin-left: 10%;
+  flex: 30%;
+}
+
+.salsicha__desktop {
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.salsicha__desktop img {
+  width: 700px;
+  height: 700px;
+}
+
+.salsicha__desktop::before {
+  content: "";
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: #07a0c3;
+  border-radius: 50%;
+  z-index: -1; /* Coloca o círculo atrás da imagem */
+}
+
+.rotacao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 2;  */
+}
+
+.rotacao img {
+  width: 500px;
+  height: 500px;
+}
+
+
+.efeito {
+  animation-name: efeito;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes efeito {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.salsicha__mobile {
+    display: none;
+}
+
+hr {
+  width: 72%;
+  margin: 0 0 30px 0;
+  margin-left: 10%;
+  text-align: start;
+}
+
+.headline h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #252525;
+  line-height: 1.25;
+  letter-spacing: 3px;
+  margin: 0 10px 10px 0;
+  padding: 0 10px 10px 0;
+}
+
+.headline h2 {
+  font-size: 3em;
+  line-height: 1.25;
+  color: #252525;
+  margin: 0 10px 10px 0;
+  padding: 0 10px 10px 0;
+}
+
+.headline p {
+  font-size: 1em;
+  line-height: 1.25;
+  color: #252525;
+  margin: 0 10px 10px 0;
+  padding: 0 10px 10px 0;
+}
+
+.contato-btn {
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 0 20px 20px 0;
+  line-height: 46px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  border: 3px solid #07a0c3;
+  color: #07a0c3;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.35s;
+}
+
+.contato-btn:before,
+.contato-btn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #07a0c3;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.contato-btn:before {
+  opacity: 0.5;
+}
+
+.contato-btn:after {
+  transition-delay: 0.2s;
+}
+
+.contato-btn:hover {
+  color: #fff1d0;
+}
+
+.contato-btn:hover:before,
+.contato-btn:hover:after {
+  top: 0;
+}
+
+i {
+  font-size: 16px;
+  color: #07a0c3;
+  padding: 10px;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.especialidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre as divs */
+}
+
+.especialidades h3 {
+  color: #07a0c3;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.17em;
+}
+
+.especialidades p {
+  color: #252525;
+  font-size: 1em;
+}
+
+.especialidades h3,
+.especialidades p {
+  padding: 5px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1005px) {
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .headline h1 {
+    font-size: 1em;    
+  }
+
+  .headline h2 {
+    font-size: 2em;
+  }
+
+  .headline p {
+    font-size: .83em;   
+    text-align: center;
+  } 
+  
+  .salsicha__mobile {
+    display: block;
+    flex: 100%;
+    text-align: center;
+    margin: auto;    
+  
+    position: relative;
+    display: block;
+    z-index: 1;
+  }  
+
+  .salsicha__mobile img {
+    width: 200px;
+    height: 200px;     
+  }
+
+  .salsicha__mobile::before {
+    content: "";
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: #07a0c3;
+    border-radius: 50%;
+    z-index: -1; /* Coloca o círculo atrás da imagem */
+  }  
+
+  .contato-btn {
+    display: inline-block;
+  }
+
+  hr {
+    /* width: 90%; */
+    margin: 10%;
+  }
+
+  .especialidades {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .salsicha__desktop,
+  .rotacao,
+  .rotacao img {
+    display: none;
+  }
+}
