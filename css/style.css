@@ -139,8 +139,7 @@ hr {
   color: #252525;
   line-height: 1.25;
   letter-spacing: 3px;
-  margin: 0 10px 10px 0;
-  padding: 0 10px 10px 0;
+  margin: 0 5px 5px 0;  
 }
 
 .headline h2 {
@@ -148,7 +147,9 @@ hr {
   line-height: 1.25;
   color: #252525;
   margin: 0 10px 10px 0;
-  padding: 0 10px 10px 0;
+  /* padding: 0 10px 10px 0;   */
+ 
+
 }
 
 .headline p {
@@ -247,7 +248,7 @@ section {
   .menu {
     display: none;
   }
-
+   
   .logo {
     margin: 0;
     padding: 20px;
@@ -256,25 +257,28 @@ section {
 
   .headline {
     flex: 100%;
-    margin: 5%;
+    margin: auto;
     text-align: center;
-    padding: 10px;
+    padding-left: 10px;    
   }
 
   .headline h1 {
     text-align: left;
     font-size: 1em;
-    white-space: wrap;    
+    white-space: wrap;  
+    padding-top: 25px;     
   }
 
   .headline h2 {
     text-align: left;
     font-size: 2em;    
+    text-wrap: balance;     
+    padding: 0 5px 5px 0;
   }
 
   .headline p {
     font-size: 1em;
-    text-align: left;
+    text-align: left;       
   }
 
   .salsicha__mobile {
