@@ -264,7 +264,7 @@ section {
   .headline h1 {
     text-align: left;
     font-size: 1em;
-    white-space: nowrap;
+    white-space: wrap;    
   }
 
   .headline h2 {
@@ -325,7 +325,7 @@ section {
 
   .especialidades p {
     white-space: nowrap;
-    margin-left: 5%;      
+    margin-left: 5%;        
   }  
 
   .especialidades h3::before {
