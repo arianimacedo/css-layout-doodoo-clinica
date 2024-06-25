@@ -1,0 +1,105 @@
+html:
+
+<!-- <footer class="footer__container">
+    <div class="footer__conteudo">
+      <div class="footer__contato">
+        <h4>Contato</h4>
+      <a href="mailto:info@doodoo.com"
+        ><i class="fa fa-envelope-open fa-lg" aria-hidden="true"></i
+        >info@doodoo.com</a
+      >        
+      <a href="+56987654321"
+        ><i class="fa fa-phone fa-lg" aria-hidden="true"></i>+569 8765 4321</a
+      >
+      </div>
+      <div class="footer__redes">
+        <h4>Redes Sociais</h4>         
+      
+      <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> </a>
+        
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>     
+      
+      <div class="footer__endereco">
+        <h4>Endereço</h4>
+        <i class="fa fa-map-marker" aria-hidden="true"></i> <p>Rua Itapiruna, 0 - São Paulo/SP</p>
+      </div>
+    </div> -->
+    
+
+    .footer__container { 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100vw;
+  height: 214px;  
+
+  background-color: rgba(255, 241, 208, 1);
+  background-image:  url(https://i.ibb.co/wWxqndt/grid-light.png);
+  background-size: auto;
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+css:
+
+.footer__container h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #252525;       
+  padding: 5px;  
+}
+
+.footer__conteudo {   
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;   
+}
+
+.footer__contato {  
+  width: 300px;    
+  height: 100px;
+  text-align: center;      
+}
+
+.footer__contato a {
+  display: inline-block;
+  flex-flow: row wrap;
+  font-size: 0.83em;     
+  text-decoration: none;  
+  color: #252525;  
+  margin: 5px;
+  padding: 5px;   
+}
+
+.footer__redes {
+  display: inline-block;
+  flex-flow: row wrap;
+  text-align: center;   
+  width: 300px;    
+  height: 100px;   
+}
+
+.footer__redes i {  
+  margin: 5px;
+  padding: 5px;   
+}
+
+
+.footer__endereco {  
+  display: inline-block;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 300px;    
+  height: 100px;  
+}
+
+.footer__endereco p { 
+  margin: 5px;
+  padding: 5px;    
+  font-size: 0.83em;     
+}

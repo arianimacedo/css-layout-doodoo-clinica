@@ -12,6 +12,9 @@ body {
   background-color: #fff1d0;
 }
 
+main {
+}
+
 .navbar {
   display: flex;
   flex-flow: row wrap;
@@ -131,6 +134,7 @@ hr {
   margin: 0 0 30px 0;
   margin-left: 10%;
   text-align: start;
+  border-color: #cccccc75;
 }
 
 .headline h1 {
@@ -139,7 +143,7 @@ hr {
   color: #252525;
   line-height: 1.25;
   letter-spacing: 3px;
-  margin: 0 5px 5px 0;  
+  margin: 0 5px 5px 0;
 }
 
 .headline h2 {
@@ -148,8 +152,6 @@ hr {
   color: #252525;
   margin: 0 10px 10px 0;
   /* padding: 0 10px 10px 0;   */
- 
-
 }
 
 .headline p {
@@ -224,6 +226,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px; /* Espaçamento entre as divs */
+
+  height: 100px;
 }
 
 .especialidades h3 {
@@ -244,11 +248,35 @@ section {
   margin: 10px;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-color: #fff1d0;
+  
+  height: 100px;
+
+  font-size: 0.86em;
+  font-weight: normal;
+  text-align: center; 
+}
+
+footer h4 {
+  margin: 5px;
+  font-weight: normal;
+}
+
+
+
 @media screen and (max-width: 1005px) {
   .menu {
     display: none;
   }
-   
+
   .logo {
     margin: 0;
     padding: 20px;
@@ -259,26 +287,26 @@ section {
     flex: 100%;
     margin: auto;
     text-align: center;
-    padding-left: 10px;    
+    padding-left: 10px;
   }
 
   .headline h1 {
     text-align: left;
     font-size: 1em;
-    white-space: wrap;  
-    padding-top: 25px;     
+    white-space: wrap;
+    padding-top: 25px;
   }
 
   .headline h2 {
     text-align: left;
-    font-size: 2em;    
-    text-wrap: balance;     
+    font-size: 2em;
+    text-wrap: balance;
     padding: 0 5px 5px 0;
   }
 
   .headline p {
     font-size: 1em;
-    text-align: left;       
+    text-align: left;
   }
 
   .salsicha__mobile {
@@ -316,21 +344,35 @@ section {
     display: inline-block;
   }
 
-  hr {    
+  hr {
     display: none;
   }
+
+  footer {    
+    height: 100px;
+    background: none;    
+  }
+
+  footer h4, footer p {
+    font-weight: normal;
+    margin: 10px;
+    padding: 5px;
+  }
+ 
+
 
   .especialidades {
     background-color: #fff;
     width: 100%;
+    height: 300px;
     margin: 40px 0 30px 0;
-    padding: 20px 0 15px 0;       
+    padding: 20px 0 15px 0;
   }
 
   .especialidades p {
     white-space: nowrap;
-    margin-left: 5%;        
-  }  
+    margin-left: 5%;
+  }
 
   .especialidades h3::before {
     content: "";
@@ -347,10 +389,8 @@ section {
   .rotacao img {
     display: none;
   }
-}
 
-/* @media screen and (max-width: 810px) {
-  .especialidades {    
-    margin: 5%;
+  .footer__redes {
+    height: 60px;
   }
-} 
+}
